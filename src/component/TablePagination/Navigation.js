@@ -18,6 +18,7 @@ function Navigation() {
       <Button
         className="table__navigation__button"
         onClick={prevPage}
+        data-testid="prev-button"
         disabled={isPrevDisabled}
       >
         <ChevronLeft />
@@ -28,6 +29,7 @@ function Navigation() {
       <Button
         className="table__navigation__button"
         onClick={nextPage}
+        data-testid="next-button"
         disabled={isNextDisabled}
       >
         <ChevronRight />

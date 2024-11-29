@@ -10,7 +10,7 @@ function Table({ headers, list }) {
           ))}
         </tr>
       </thead>
-      <tbody>
+      <tbody data-testid="table-body">
         {list.map((item) => (
           <tr className="table__row" key={`row-${item["s.no"]}`}>
             {headers.map(({ key }) => (
